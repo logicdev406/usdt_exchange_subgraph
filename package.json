@@ -1,0 +1,19 @@
+{
+  "name": "usdt_subgraph",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "codegen": " graph codegen ./token.yaml ",
+    "deploy": " graph deploy --product hosted-service --node https://api.thegraph.com/deploy/  --ipfs https://api.thegraph.com/ipfs/ logicdev406/usdt-transfers ./token.yaml --access-token "
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@graphprotocol/graph-cli": "^0.20.0",
+    "@graphprotocol/graph-ts": "^0.20.1",
+    "typescript": "^4.2.4"
+  }
+}
